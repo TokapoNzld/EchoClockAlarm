@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EchoClock Support / 技术支持</title>
+  <meta name="description" content="EchoClock 技术支持与常见问题 - 录音、铃声、内购、恢复购买等帮助文档" />
+  <style>
+    :root{
+      --bg:#f7f8fb; --card:#ffffff; --accent:#6B46C1; --muted:#6b7280;
+      --maxw:900px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{margin:0;background:var(--bg);color:#111;}
+    header{background:linear-gradient(90deg,#6B46C1 0%, #9F7AEA 100%);color:#fff;padding:28px 16px;text-align:center}
+    .container{max-width:var(--maxw);margin:20px auto;padding:0 16px;}
+    .card{background:var(--card);border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:0 6px 18px rgba(20,20,50,0.06)}
+    h1{margin:0;font-size:22px}
+    h2{font-size:18px;margin:0 0 12px}
+    p{color:var(--muted);margin:8px 0 12px;line-height:1.5}
+    ul{margin:8px 0 12px;padding-left:20px;color:var(--muted)}
+    code{background:#f2f4f8;padding:2px 6px;border-radius:6px;font-family:monospace}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none}
+    .muted{color:var(--muted);font-size:14px}
+    footer{padding:20px;text-align:center;color:var(--muted);font-size:13px}
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width:700px){.cols{grid-template-columns:1fr}}
+    .label{font-weight:600;color:#222;margin-bottom:6px}
+    .mailto{word-break:break-all}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EchoClock 技术支持 / Support</h1>
+    <p class="muted">录音、铃声、闹钟与内购问题支持 / Recording, ringtone, alarm & in-app purchase support</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>联系支持 / Contact Support</h2>
+      <p class="muted">如果你遇到问题或想提交反馈，请通过下列方式联系我们。请在邮件中尽可能提供 App 版本、iOS 版本和重现步骤。</p>
+      <p class="label">支持邮箱 / Support Email</p>
+      <p class="mailto"><a class="btn" href="mailto:echoclockx-feedback@outlook.com?subject=EchoClock%20Support">Send feedback / 发送反馈</a>
+      &nbsp;&nbsp;<span class="muted">或复制：<code>echoclockx-feedback@outlook.com</code></span></p>
+      <p class="muted">（请把占位邮箱替换为你的真实支持邮箱）</p>
+    </section>
+
+    <section class="card">
+      <h2>常见问题 / FAQ</h2>
+      <div class="cols">
+        <div>
+          <h3 class="label">录音 / Recording</h3>
+          <ul>
+            <li>如何录音？打开应用 → 进入“录音”页面 → 点击录制按钮。</li>
+            <li>录音时长有限制吗？是的，默认限制为 <strong>15 秒</strong>（可在界面查看）。</li>
+            <li>录音文件存放在哪里？录音保存在 App 的本地目录（Library/Sounds），不会上传到服务器。</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="label">导入与播放 / Import & Playback</h3>
+          <ul>
+            <li>支持导入哪些格式？常见音频格式（如 m4a、mp3）通常可用，具体依设备和格式而异。</li>
+            <li>导入后如何设为铃声？导入文件后在文件列表中选择“设为铃声”。</li>
+            <li>播放问题：若无法播放，请检查文件是否损坏或格式受限。</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="label">内购 / In-App Purchase</h3>
+          <ul>
+            <li>如何购买 VIP？在“购买”页点击购买按钮，使用 Apple ID 完成支付。</li>
+            <li>如何恢复购买？设置或购买页点击“恢复购买”。购买与恢复均通过 App Store 处理。</li>
+            <li>遇到购买问题？请使用邮件联系我们并附上你的 Apple ID 邮箱与购买时间（若可用）。</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="label">邮件反馈 / Mail Feedback</h3>
+          <ul>
+            <li>若无法打开邮件应用，请选择“复制邮箱地址”，然后手动发送邮件或在浏览器打开 webmail。</li>
+            <li>邮件示例内容建议：App 版本、iOS 版本、问题描述、复现步骤、截图（如有）。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>故障排查 / Troubleshooting</h2>
+      <p class="label">常见快速修复步骤：</p>
+      <ol class="muted">
+        <li>重启 App（双击 Home 或上划强制关闭后重新打开）。</li>
+        <li>确保已授予麦克风权限：设置 → EchoClock → 麦克风（Microphone）。</li>
+        <li>如果导入文件无法播放，尝试在外部转换为 m4a 或 mp3 再导入。</li>
+        <li>若内购失败，请确认 App Store 登录状态并使用真实设备测试（非模拟器）。</li>
+        <li>删除 App 并重新安装（重装会删除本地数据，请谨慎）。</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>如何提交 Bug 报告 / Submit a Bug Report</h2>
+      <p class="muted">请通过邮件提交问题，邮件模版建议包含以下信息：</p>
+      <ul class="muted">
+        <li>应用版本（例如：EchoClock v1.2.0）</li>
+        <li>设备型号与 iOS 版本（例如：iPhone 12, iOS 17.0）</li>
+        <li>问题发生的具体步骤（重现步骤）</li>
+        <li>是否附带录音或示例文件（如有，请附上）</li>
+        <li>截图或录屏（如有）</li>
+      </ul>
+      <p class="muted">发送到：<a href="mailto:echoclockx-feedback@outlook.com">echoclockx-feedback@outlook.com</a></p>
+    </section>
+
+    <section class="card">
+      <h2>隐私与条款 / Privacy & Terms</h2>
+      <p class="muted">隐私政策与使用条款链接（替换为你的实际链接）：</p>
+      <p><a href="#" class="muted">Privacy Policy（隐私政策）</a> • <a href="#" class="muted">Terms of Use（使用条款）</a></p>
+    </section>
+
+    <section class="card">
+      <h2>常用链接 / Quick Links</h2>
+      <p><a class="btn" href="mailto:echoclockx-feedback@outlook.com?subject=EchoClock%20Support">Contact Support / 联系支持</a>
+         &nbsp;&nbsp;
+         <!-- <a class="btn" href="#" style="background:#10B981">Privacy Policy</a></p> -->
+      <p class="muted">若需退款，请访问 Apple 支持页面（购买通过 App Store 处理）。</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="muted">© <span id="year"></span> EchoClock • All rights reserved</div>
+  </footer>
+
+  <script>
+    // 自动填充年份
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
